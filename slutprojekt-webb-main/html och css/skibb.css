@@ -1,0 +1,136 @@
+@font-face{
+	font-family: prodelt;
+	src: url("../font/Prodelt Co.ttf")
+}
+
+body{
+	margin: 0;
+	background-color: rgba(26,188,156 ,1);
+}
+.container, html{
+	height:100vh;
+
+}
+
+header{
+	grid-area: header;
+	background-image: url("../bilder/banner1.png");
+}
+h1{
+	text-align: left;
+	padding:20px;
+	font-size: 38pt;
+	font-family: prodelt,Arial,'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica,  'sans-serif';
+	color:#AACFB4;
+	text-shadow: 3px 3px #113300;
+}
+nav{
+	grid-area: nav;
+	background-color: #117E69;
+	text-align: center;
+	overflow: hidden;
+	border-bottom: solid #041E19;
+}
+nav > ul > li {
+	width:20em;
+}
+main{
+	grid-area: main;
+	background-color: #BDEBE2;
+	padding:5px;
+	text-align: center;
+}
+section{
+	background-color: #BDEBE2;
+}
+aside{
+	grid-area: sidebar;
+	background-color: #5BCFB8;
+	padding: 20px 16px;
+}
+footer{
+	grid-area: footer;
+	background-color:#0E6958;
+}
+nav a {
+	text-decoration: none;
+	font-size: 20px;
+	font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
+	font-weight: bold;
+	color: #dff8e5;
+	padding: 20px;
+
+}
+nav a:hover{
+	background:#004C37;
+}
+nav a:visited{
+	color:#61DE7F;
+}
+nav .icon {
+	display:none;
+}
+img{
+	width:100%;
+	height:auto;
+}
+.scomp{
+	width: 480px;
+	height:395px;
+}
+.scomp1{
+	width: 400px;
+	height:395px;
+	object-fit: cover;
+}
+.lista{
+    width:200px;
+    margin:0 auto;
+    text-align:left;
+}
+h2{
+	font-family: Arial,'Gill Sans', 'Gill Sans MT', 'Myriad Pro', 'DejaVu Sans Condensed', Helvetica,  'sans-serif';
+	
+}
+
+.länkar{
+	display: flex;
+	list-style: none;
+}
+@media only screen and (min-width:768px){
+.container1{
+	display: grid;
+	margin:0;
+	grid-template-columns: auto 25% 60%;
+	grid-template-rows: auto 9% auto 10%;
+	grid-template-areas: 
+		"header header header"
+		"nav nav nav"
+		"sidebar main section"
+		"footer footer footer"
+	}
+}
+@media (min-width: 480px) {
+    #background { height: 200px; }
+}
+
+@media (min-width: 768px) {
+    #background { height: 150px; }
+}
+
+@media (min-width: 992px) {
+    #background { height: 100px; }
+}
+@media only screen and (min-width:768px){
+	.container{
+	display: grid;
+	margin: 0;
+	grid-template-columns: auto 90% auto;
+	grid-template-rows:17% 6% auto 8%;
+	grid-template-areas: 
+		"header header header "
+		"nav 	nav    nav    "
+		"sidebar main main "
+		"footer footer footer "
+	}
+}
