@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="sv">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width">
+      <link href="skibb.css" rel="stylesheet">
+      <title>formulär</title>
+      <link href="skibb.css" rel="stylesheet" type="text/css">
+   </head>
+   <body>
+      <div class="container" role="grid">
+         <header>
+            <h1>Formulär</h1>
+         </header>
+         <nav>
+            <ul class="länkar">
+               <li>
+                  <a href="index.html">Hem</a>
+               </li>
+               <li>
+                  <a href="blogg.html">Blogg</a>				
+               </li>
+               <li>
+                  <a href="tävlingar.html">Tävlingar</a>
+               </li>
+               <li>
+                  <a href="tot.html">Tips &#38; Tricks</a>
+               </li>
+               <li>
+                  <a href="omoss.html">Om oss</a>
+               </li>
+               <li>
+                  <a href="formulär.html">Vad tycker du om sidan?</a>				
+               </li>
+            </ul>
+         </nav>
+         <main>
+            <h2>Detta går fort!</h2>
+            <form action="tack.html" method="post">
+               <fieldset>
+                  <legend>Formulär</legend>
+                  <table>
+                     <thead>
+                        <tr>
+                           <th colspan="2">
+                              Svara på dessa frågor
+                           </th>
+                        </tr>
+                     </thead>
+                     <tbody>
+                        <tr>
+                           <th><label for="Name">Namn:</label></th>
+                           <th><input type="text" name="fnamn" placeholder="Förnamn" id="Name"><input type="text" name="enamn" placeholder="Efternamn"></th>
+                        </tr>
+                        <tr>
+                           <th><label for="Gender">Kön:</label></th>
+                           <th>
+                              <select name="minselect" id="Gender">
+                                 <option value="1">Man</option>
+                                 <option value="2">Kvinna</option>
+                                 <option value="3">Annat</option>
+                              </select>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th>
+                              Mail:
+                           </th>
+                           <th>
+                              <input type="email" value="" required>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th>
+                              <label for="Opinion">Vad tycker du om hemsidan?</label>
+                           </th>
+                           <th>
+                              <textarea rows="5" cols="50" id="Opinion"></textarea>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th>
+                              Skulle du rekommendera sidan?
+                           </th>
+                           <th>
+                              <input type="checkbox" checked id="ja"><label for="ja">Ja</label><br><input type="checkbox" id="nej"><label for="nej">Nej</label>
+                           </th>
+                        </tr>
+                        <tr>
+                           <th><label for="färg">Favoritfärg:</label></th>
+                           <th><input type="color" id="färg"></th>
+                        </tr>
+                        <tr>
+                           <th><label for="bild">Bifoga bild</label></th>
+                           <th>
+                              <input type="file" id="bild">
+                           </th>
+                        </tr>
+                     </tbody>
+                     <tfoot>
+                        <tr>
+                           <th colspan="2">
+                              <button type="submit"><img src="../bilder/send.png" alt="sendsymbol" class="skicka">skicka</button>
+                           </th>
+                        </tr>
+                     </tfoot>
+                  </table>
+               </fieldset>
+            </form>
+         </main>
+         <aside></aside>
+         <footer>
+         </footer>
+      </div>
+   </body>
+</html>
